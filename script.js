@@ -36,22 +36,19 @@ function encriptarTexto(mensaje){
     for(var i = 0; i < texto.length; i++){
         if(texto[i] == "a"){
             textoFinal = textoFinal + "ai"
-        }
-        else if(texto[i] == "e"){
+        }else if(texto[i] == "e"){
             textoFinal = textoFinal + "enter"
-        }
-        else if(texto[i] == "i"){
+        }else if(texto[i] == "i"){
             textoFinal = textoFinal + "imes"
-        }
-        else if(texto[i] == "o"){
-            textoFinal == textoFinal + "ober"
-        }
-        else if (texto[i] == "u"){
+        }else if(texto[i] == "o"){
+            textoFinal = textoFinal + "ober"
+        }else if(texto[i] == "u"){
             textoFinal = textoFinal + "ufat"
-        }
-        else{
-            textoFinal = textoFinal + texto[i]
-        }
+        }else{
+            textoFinal = textoFinal + texto[i];
+         }
+        
+        
     }
     return textoFinal;
 
@@ -99,8 +96,6 @@ btnCopiar.addEventListener("click", copiar = () => {
     navigator.clipboard.writeText(contenido);
     console.log("hola");
 })
-
-
 
 
 
